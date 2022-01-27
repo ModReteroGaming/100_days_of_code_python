@@ -21,8 +21,9 @@ total_with_tip = round(bill * tip_decimal, 2)
 
 #To get a definite 2 decimals for the total_each variable, do as follows
 #Better than what I had before which is commented out
-total_each = "{:.2f}".format(total_with_tip / people)
 tip_total = "{:.2f}".format(tip * bill / 100)
+total_each = "{:.2f}".format(total_with_tip / people)
+total_with_tip = "{:.2f}".format(total_with_tip)
 
 #I went an extra step to show tip amount, as that's a line item to fill out on the bill.
 print(f"Tip Amount is: ${tip_total}")
